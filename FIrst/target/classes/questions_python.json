@@ -1,0 +1,26 @@
+[
+  {
+    "language": "Python",
+    "topic": "Синтаксис",
+    "questionText": "Как обозначается блок кода в Python?",
+    "options": [
+      "Скобки",
+      "Отступы",
+      "Фигурные скобки",
+      "Ключевое слово block"
+    ],
+    "correctAnswer": "Отступы"
+  },
+  {
+    "language": "Python",
+    "topic": "Типы данных",
+    "questionText": "Какой тип данных представляет неизменяемую последовательность символов?",
+    "options": [
+      "list",
+      "tuple",
+      "str",
+      "set"
+    ],
+    "correctAnswer": "str"
+  }
+]

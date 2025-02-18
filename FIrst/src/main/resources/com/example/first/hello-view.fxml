@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" style="-fx-background-radius: 10px;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.first.Controllers.MainController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="-10.0" layoutY="-9.0" prefHeight="719.0" prefWidth="275.0" style="-fx-background-color: fff; -fx-background-radius: 20;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Тест по языкам">
+               <font>
+                  <Font name="Montserrat Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="программирования">
+               <font>
+                  <Font name="Montserrat Bold" size="18.0" />
+               </font>
+            </Text>
+            <VBox alignment="TOP_CENTER" prefHeight="279.0" prefWidth="275.0" style="-fx-background-color: fff;">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#handleLanguageSelection" prefHeight="55.0" prefWidth="175.0" text="JAVA">
+                     <font>
+                        <Font name="Montserrat Italic" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#handleLanguageSelection" prefHeight="55.0" prefWidth="175.0" text="C++">
+                     <font>
+                        <Font name="Montserrat Italic" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#handleLanguageSelection" prefHeight="55.0" prefWidth="175.0" text="Python">
+                     <font>
+                        <Font name="Montserrat Italic" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#handleLanguageSelection" prefHeight="55.0" prefWidth="175.0" text="Pascal">
+                     <font>
+                        <Font name="Montserrat Italic" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="90.0" top="70.0" />
+               </VBox.margin>
+            </VBox>
+            <Button fx:id="btnStartTest" alignment="CENTER" mnemonicParsing="false" onAction="#handleStartTest" prefHeight="55.0" prefWidth="175.0" text="НАЧАТЬ ТЕСТ!">
+               <font>
+                  <Font name="Montserrat Italic" size="18.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets top="60.0" />
+         </padding>
+         <effect>
+            <DropShadow />
+         </effect>
+      </VBox>
+      <AnchorPane fx:id="questionLayer" layoutX="315.0" layoutY="134.0" prefHeight="459.0" prefWidth="549.0" style="-fx-border-color: black; -fx-border-radius: 10px;" visible="false">
+         <children>
+            <Label fx:id="lblQuestion" alignment="TOP_LEFT" layoutX="21.0" layoutY="24.0" prefHeight="75.0" prefWidth="502.0" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <VBox fx:id="vboxAnswers" layoutX="35.0" layoutY="109.0" prefHeight="257.0" prefWidth="457.0" />
+            <Button layoutX="195.0" layoutY="380.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="152.0" text="Ответить" textFill="#dd1515">
+               <font>
+                  <Font name="Montserrat Regular" size="20.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <Button fx:id="btnFinish" layoutX="479.0" layoutY="617.0" mnemonicParsing="false" onAction="#handleFinish" prefHeight="54.0" prefWidth="236.0" text="Завершить тест" visible="false">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblStatus" layoutX="341.0" layoutY="31.0" prefHeight="63.0" prefWidth="433.0">
+         <padding>
+            <Insets top="30.0" />
+         </padding>
+         <font>
+            <Font name="Montserrat Bold" size="27.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

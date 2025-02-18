@@ -1,0 +1,182 @@
+[
+  {
+    "language": "Java",
+    "topic": "ООП",
+    "questionText": "Что такое полиморфизм?",
+    "options": [
+      "Способность объекта принимать множество форм",
+      "Наследование",
+      "Инкапсуляция",
+      "Абстракция"
+    ],
+    "correctAnswer": "Способность объекта принимать множество форм"
+  },
+  {
+    "language": "Java",
+    "topic": "Коллекции",
+    "questionText": "Какой интерфейс реализует класс ArrayList?",
+    "options": [
+      "List",
+      "Set",
+      "Map",
+      "Queue"
+    ],
+    "correctAnswer": "List"
+  },
+  {
+    "language": "Java",
+    "topic": "ООП",
+    "questionText": "Что такое инкапсуляция?",
+    "options": [
+      "Скрытие реализации и предоставление доступа через интерфейс",
+      "Способность объекта изменять свою форму",
+      "Процесс наследования методов",
+      "Создание абстрактных классов"
+    ],
+    "correctAnswer": "Скрытие реализации и предоставление доступа через интерфейс"
+  },
+  {
+    "language": "Java",
+    "topic": "Коллекции",
+    "questionText": "Какая структура данных используется в HashSet?",
+    "options": [
+      "Хеш-таблица",
+      "Связанный список",
+      "Дерево",
+      "Очередь"
+    ],
+    "correctAnswer": "Хеш-таблица"
+  },
+  {
+    "language": "Java",
+    "topic": "Потоки",
+    "questionText": "Какой ключевой класс используется для создания потоков?",
+    "options": [
+      "Thread",
+      "Runnable",
+      "Executor",
+      "Future"
+    ],
+    "correctAnswer": "Thread"
+  },
+  {
+    "language": "Java",
+    "topic": "Исключения",
+    "questionText": "Каким является исключение NullPointerException?",
+    "options": [
+      "Непроверяемым (Runtime Exception)",
+      "Проверяемым (Checked Exception)",
+      "Ошибка компиляции",
+      "Ошибка времени выполнения"
+    ],
+    "correctAnswer": "Непроверяемым (Runtime Exception)"
+  },
+  {
+    "language": "Java",
+    "topic": "Лямбда-выражения",
+    "questionText": "Что представляют собой лямбда-выражения?",
+    "options": [
+      "Анонимные функции",
+      "Методы с ключевым словом static",
+      "Объекты классов",
+      "Конструкторы"
+    ],
+    "correctAnswer": "Анонимные функции"
+  },
+  {
+    "language": "Java",
+    "topic": "ООП",
+    "questionText": "Какой модификатор доступа делает метод доступным только внутри класса?",
+    "options": [
+      "private",
+      "protected",
+      "public",
+      "default"
+    ],
+    "correctAnswer": "private"
+  },
+  {
+    "language": "Java",
+    "topic": "Коллекции",
+    "questionText": "Какой класс представляет собой неизменяемый список?",
+    "options": [
+      "Collections.unmodifiableList",
+      "ArrayList",
+      "LinkedList",
+      "Vector"
+    ],
+    "correctAnswer": "Collections.unmodifiableList"
+  },
+  {
+    "language": "Java",
+    "topic": "Многопоточность",
+    "questionText": "Какой интерфейс должен реализовывать класс для создания потока?",
+    "options": [
+      "Runnable",
+      "Callable",
+      "Thread",
+      "Executor"
+    ],
+    "correctAnswer": "Runnable"
+  },
+  {
+    "language": "Java",
+    "topic": "Файлы",
+    "questionText": "Какой класс используется для работы с файлами в Java?",
+    "options": [
+      "File",
+      "Path",
+      "Files",
+      "BufferedReader"
+    ],
+    "correctAnswer": "File"
+  },
+  {
+    "language": "Java",
+    "topic": "Стримы",
+    "questionText": "Какой метод используется для фильтрации данных в Stream API?",
+    "options": [
+      "filter",
+      "map",
+      "collect",
+      "reduce"
+    ],
+    "correctAnswer": "filter"
+  },
+  {
+    "language": "Java",
+    "topic": "Генерики",
+    "questionText": "Какая запись является правильной для обобщенного метода?",
+    "options": [
+      "public <T> void methodName()",
+      "public void<T> methodName()",
+      "public void methodName<T>()",
+      "public methodName<T>()"
+    ],
+    "correctAnswer": "public <T> void methodName()"
+  },
+  {
+    "language": "Java",
+    "topic": "Коллекции",
+    "questionText": "Какая коллекция позволяет хранить уникальные элементы в порядке их добавления?",
+    "options": [
+      "LinkedHashSet",
+      "HashSet",
+      "TreeSet",
+      "PriorityQueue"
+    ],
+    "correctAnswer": "LinkedHashSet"
+  },
+  {
+    "language": "Java",
+    "topic": "Spring",
+    "questionText": "Какой аннотацией помечается основной класс в Spring Boot?",
+    "options": [
+      "@SpringBootApplication",
+      "@Component",
+      "@Configuration",
+      "@Service"
+    ],
+    "correctAnswer": "@SpringBootApplication"
+  }
+]

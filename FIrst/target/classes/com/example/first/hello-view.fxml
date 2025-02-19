@@ -83,7 +83,7 @@
                </font>
             </Label>
             <VBox fx:id="vboxAnswers" layoutX="35.0" layoutY="109.0" prefHeight="257.0" prefWidth="457.0" />
-            <Button layoutX="195.0" layoutY="403.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="152.0" text="Ответить" textFill="#dd1515">
+            <Button fx:id="btnAnswer" onAction="#handleAnswer" layoutX="195.0" layoutY="380.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="152.0" text="Ответить" textFill="#dd1515">
                <font>
                   <Font name="Montserrat Regular" size="20.0" />
                </font>

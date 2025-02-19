@@ -7,15 +7,20 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
+import javafx.geometry.Insets;
 
 import java.util.List;
 
 public class MainController {
 
-    @FXML private Button btnStartTest, btnFinish;
-    @FXML private Label lblStatus, lblQuestion;
-    @FXML private VBox vboxAnswers;
-    @FXML private AnchorPane questionLayer;
+    @FXML
+    private Button btnStartTest, btnFinish;
+    @FXML
+    private Label lblStatus, lblQuestion;
+    @FXML
+    private VBox vboxAnswers;
+    @FXML
+    private AnchorPane questionLayer;
 
     private String selectedLanguage;
     private int currentQuestionIndex = 0;
@@ -49,6 +54,9 @@ public class MainController {
     @FXML
     private void handleStartTest(ActionEvent event) {
         finishTest();
+        if (questionService.getQuestionsForLanguage(selectedLanguage, 1).isEmpty()) {
+            System.out.println();
+        }
         isTestRunning = true;
         questionLayer.setVisible(true);
         if (selectedLanguage == null) {
@@ -70,7 +78,7 @@ public class MainController {
         showQuestion();
     }
 
-    private void finishTest(){
+    private void finishTest() {
         isTestRunning = false;
         questionLayer.setVisible(false);
         btnFinish.setVisible(false);
@@ -94,6 +102,8 @@ public class MainController {
         for (String answer : question.getOptions()) {
             RadioButton radioButton = new RadioButton(answer);
             radioButton.setToggleGroup(toggleGroup);
+            radioButton.setStyle("-fx-font-size: 16px;");
+            radioButton.setPadding(new Insets(5, 0, 5, 0));
             vboxAnswers.getChildren().add(radioButton);
         }
 
@@ -107,5 +117,20 @@ public class MainController {
 
         // Показываем диалоговое окно и ждем, пока пользователь его закроет
         alert.showAndWait();
+    }
+
+    public void handleAnswer(ActionEvent event) {
+        if (!isTestRunning) {
+            return;
+        }
+
+        Toggle selectedToggle = toggleGroup.getSelectedToggle();
+        if (selectedToggle == null) {
+            return;
+        }
+
+        RadioButton radioButton = (RadioButton) selectedToggle;
+        String userAnswer = radioButton.getText();
+        System.out.println(userAnswer.toLowerCase());
     }
 }
